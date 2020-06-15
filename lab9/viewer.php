@@ -4,7 +4,7 @@
     function getFriendsList($type, $page)
     {
      // осуществляем подключение к базе данных
-     $mysqli = mysqli_connect('std-mysql', 'std_938', 'qazwsxedc', 'std-938');
+     $mysqli = mysqli_connect('std-mysql', 'std_938', 'qazwsxedc', 'std_938');
     if( mysqli_connect_errno() )                                               // проверяем корректность подключения
     return 'Ошибочка подключения к БД: '.mysqli_connect_error();
         
