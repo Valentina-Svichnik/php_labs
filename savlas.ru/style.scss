@@ -1,0 +1,151 @@
+html,body{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#logo{
+    width: 6%;
+}
+
+main{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.card_img{
+    height: 500px !important;
+}
+
+.main_cont{
+    background-image: url(img/fon_flowers.png);
+    height: auto;
+}
+
+.carousel{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+
+
+.row__pink{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 30px;
+    left: 190px;
+    background-color: #FDECEF;
+    z-index: 1;
+}
+
+.img-about{
+    z-index: 10;
+}
+
+.btn-pink{
+    background-color: #A16771;
+    color: white;
+}
+
+.btn-blue{
+    background-color: #96ACBA;
+    color: white;
+}
+
+.form-group input{
+    min-width: 220px;
+}
+
+@media (min-width: 100px) { 
+    #logo{
+        width: 15%;
+    }
+
+    .card-small{
+        width: 30% !important;
+        font-size: 0.8rem !important;
+        .card-small h6{
+            font-size: 0.6rem !important;
+        }
+        .card-small a{
+            font-size: 0.8rem !important;
+        }
+    }
+ }
+
+ @media (min-width: 576px) { 
+    #logo{
+        width: 15%;
+    }
+    .card-small{
+        width: 30% !important;
+        font-size: 0.8rem !important;
+        .card-small h6{
+            font-size: 0.6rem !important;
+        }
+    }
+ } 
+
+@media (min-width: 768px) { 
+    #logo{
+        width: 10%;
+    }
+    
+    .card-small{
+        width: 25% !important;
+        font-size: 1rem !important;
+        .card-small h6{
+            font-size: 1rem !important;
+        }
+    }
+ }
+
+@media (min-width: 992px) { 
+    #logo{
+        width: 6%;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    #logo{
+        width: 6%;
+    }
+ }
+
+ @media print{
+    @page {
+        margin: 2cm;
+    }
+
+    form, input{
+        display: none;
+    }
+
+    .print-none, .card-small a, .card-body a {
+        display: none;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    img{
+        filter: grayscale(100%); 
+    }
+
+    .main_cont{
+        background: none;
+    }
+
+    .card-small, h5:first-child{ 
+        page-break-inside: avoid; 
+    }
+
+    h5{ 
+        page-break-before: always;
+    }
+
+    .row__pink{
+        background-color: rgb(163, 163, 163);
+    }
+   
+}
